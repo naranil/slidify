@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Law of large number and Central limit theorem</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Law of large number and Central limit theorem">
+  <meta name="author" content="Anil Nara">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Law of large number and Central limit theorem</h1>
+    <h2>A visualization tool to understand two important statistic theorems</h2>
+    <p>Anil Nara<br/>Courserian</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Purpose of this data product</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This visualization tool allows statistics students to understand interactively the two main statistic theorems: the <code>Law of Large Number</code> (LLN) and the <code>Central Limit Theorem</code> (CLT). It basically allows to :</p>
+
+<ul>
+<li>Chose one of those three continuous probabilistic laws : <code>Uniform</code>, <code>Exponential</code> and <code>Normal</code> and their corresponding parameters.</li>
+<li>Generate a number N of <code>samples</code> following the law.</li>
+<li>Plot a distribution of the law</li>
+<li>Plot an histogram of the empirical means</li>
+<li>Allows the user to display the estimate of the mean, the theoretical mean (LLN) and the asymptotic gaussian (CLT)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Little reminder about LLN and CLT</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><code>Law of Large Number</code> :
+We consider a sample of iid random variables \((X_i)_{1 \leq i \leq N}\) their mean \(\mu\) and standard deviation \(\sigma\). The sample average \(\overline{X}_n = \frac{1}{n} (X_1 + \dots + X_n)\) converges to the expected value \(\mu\).</li>
+<li><code>Central Limit Theorem</code> :
+The random variable \(\overline{X}_n\) follows a normal distribution of mean \(\mu\) and standard deviation \(\sigma / \sqrt{n}\)</li>
+</ul>
+
+<p><img src="figure/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How to use the app</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here are the 5 steps you need to follow:</p>
+
+<ul>
+<li>Chose the size of your <code>sample</code> with the slider.</li>
+<li>Chose the type of distribution with the radio buttons.</li>
+<li>Set the <code>parameters</code> related to the distribution in the text fields.</li>
+<li>If you want, add the <code>theoretical mean</code>, the <code>estimate mean</code> or the <code>normal distribution</code>.</li>
+<li>Enjoy the two plots !</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Improvements that can be made</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This project is all yours you can improve this app !</p>
+
+<ul>
+<li><p><code>Quantify</code> the convergence</p></li>
+<li><p>Add other <code>laws</code> (for example discrete laws)</p></li>
+<li><p>Use other <code>visualation tools</code> (rCharts and googleVis)</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Purpose of this data product'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Little reminder about LLN and CLT'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How to use the app'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Improvements that can be made'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
